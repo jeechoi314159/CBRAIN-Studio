@@ -1,0 +1,15 @@
+/*
+ * USB CDC ACM 노드 — 호스트에 /dev/tty.usbmodem… (CDC) 로 나타난다.
+ * BLE central 이 받은 CB 프레임을 이 포트로 흘리고, 호스트 커맨드를 역방향으로 받는다.
+ */
+&zephyr_udc0 {
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};
+
+/* 보드 공통 dtsi 가 콘솔용 CDC 노드(board_cdc_acm_uart)를 추가로 만든다 → 포트 2개.
+ * 콘솔은 RTT 로 돌리고 이 노드를 꺼서 데이터 CDC 포트 하나만 남긴다(학생 UX). */
+&board_cdc_acm_uart {
+	status = "disabled";
+};

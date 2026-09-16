@@ -1,0 +1,521 @@
+{
+  "version": "2.1.0",
+  "files": {
+    ".gitignore": {
+      "bytes": 542,
+      "sha256": "5c2b8bb98103a1b7cc9fbee289ac94b27a67f9b7c9c39ba7879adf806e58b450"
+    },
+    "README.md": {
+      "bytes": 3307,
+      "sha256": "6440cfc9aed9d48532f561208feaffdcae0405137129feb3a5842e7ba44bf348"
+    },
+    "app/START_HERE.md": {
+      "bytes": 8889,
+      "sha256": "f71f6b75a36cbc696c57bc17bc9465ff3e53367c6389362e4cfa7f280cac9872"
+    },
+    "app/firmware/dongle_bridge.hex": {
+      "bytes": 492313,
+      "sha256": "7122da2de449935fb1e52f9349337432ea7f9065b4ef102d3e8efe8c2e2f49db"
+    },
+    "app/firmware/dongle_bridge.manifest.json": {
+      "bytes": 1788,
+      "sha256": "7a2a6b322b4dce01ebf3e068c89089149bd1a29cd4ba3811efbe8b27583698cd"
+    },
+    "app/firmware/headstage_common.hex": {
+      "bytes": 641952,
+      "sha256": "86e4a9d95d3ba7114caf40f3d40e86876e2419e345606b5a49d20004528ca929"
+    },
+    "app/firmware/headstage_common.manifest.json": {
+      "bytes": 1274,
+      "sha256": "3c4b0c47d9de2a2b1648b1d34f529ebf812f9b0a9ff3f006769b4dcf950d4dd2"
+    },
+    "cbrain_studio/__init__.py": {
+      "bytes": 488,
+      "sha256": "917b0800a6bc2d847691210864d52e8280569f8a9a7d0d0aad9ab8d3454b119d"
+    },
+    "cbrain_studio/app/__init__.py": {
+      "bytes": 40,
+      "sha256": "34594e398c307cb25eee57db07b325c31645dc5d5737476edcf1d2ac7b06c9d5"
+    },
+    "cbrain_studio/app/acquisition.py": {
+      "bytes": 3818,
+      "sha256": "1b599e018c799b2158e15ea286081a870298866ef81a91269941e95bbe9a9fc8"
+    },
+    "cbrain_studio/app/calibration.py": {
+      "bytes": 2021,
+      "sha256": "0ba5d45588122edfcaff90a86d42d5abde7b02d04fc64880cf62330614dfb19b"
+    },
+    "cbrain_studio/app/detection.py": {
+      "bytes": 5276,
+      "sha256": "38e17906a9b99b68ea3fe6ed0e7d239da580b6d25c1385da6ae7ddd34628163b"
+    },
+    "cbrain_studio/app/display_buffer.py": {
+      "bytes": 10059,
+      "sha256": "326a3704e803d0229ae9c3a02d547685ca1efaeaa01eb2246eebe1dc93c7568f"
+    },
+    "cbrain_studio/app/fw_config.py": {
+      "bytes": 4380,
+      "sha256": "a32e187bb2e63aa6d631fd6287768b9dbcca3c55e1b8eef0904635d6b90e950e"
+    },
+    "cbrain_studio/app/hex_stamp.py": {
+      "bytes": 3591,
+      "sha256": "0d5696000a8edea2e8345e60d300a78c507f70a680587e0fccfb80a6b3acf150"
+    },
+    "cbrain_studio/app/led_gate.py": {
+      "bytes": 2782,
+      "sha256": "94b8fcddc0cd107a2e6f513a6070758770158e4ac43e5cac61406e67f8917b5b"
+    },
+    "cbrain_studio/app/profile.py": {
+      "bytes": 3421,
+      "sha256": "c4d4cee0210cf94aa91e9d2cd6ec30b337ad02d27f9ef39e7efccc8571cb37ed"
+    },
+    "cbrain_studio/app/recording.py": {
+      "bytes": 6296,
+      "sha256": "605569aa1aca89977c4419f736db8c4129b8fdb077dc12219df4a99b7aec5ecc"
+    },
+    "cbrain_studio/app/session.py": {
+      "bytes": 14204,
+      "sha256": "c906d37ea9c52303ead81d4f5fdf07d3ac3f4e1a101d2403e1aa0eebade28b7f"
+    },
+    "cbrain_studio/core/__init__.py": {
+      "bytes": 84,
+      "sha256": "f220191862f13945d0f9eaa295970f2a47406c8aeed092f812b6ea80825a0133"
+    },
+    "cbrain_studio/core/crc.py": {
+      "bytes": 554,
+      "sha256": "c183a411fca90f31fd9cad2a43e467d276f5889650cb432cfdfa5340bf154ac6"
+    },
+    "cbrain_studio/core/packet.py": {
+      "bytes": 13947,
+      "sha256": "523913f11f4f80736ba8789aa26d007e14adf670a8ecc1455e0a58449ce01b6e"
+    },
+    "cbrain_studio/core/ring_buffer.py": {
+      "bytes": 1463,
+      "sha256": "bc7885d95f0b654b1fc5c25146ac0656a48fdf92e8ecb606e9ef1120a83aa10b"
+    },
+    "cbrain_studio/core/sample_bus.py": {
+      "bytes": 1437,
+      "sha256": "c72888976ec2caabd1b9e74763ef4a0c4991403b836cf0390f1b10fb57ddf449"
+    },
+    "cbrain_studio/core/time_base.py": {
+      "bytes": 2493,
+      "sha256": "61d3db073c3b5add18e6428b64e9510ca595484a94281b09e3994ea0a7046790"
+    },
+    "cbrain_studio/core/types.py": {
+      "bytes": 3491,
+      "sha256": "182e253629d5011db96da1710244785f13dfe2dcb62a73a244a45d8cb0f417db"
+    },
+    "cbrain_studio/hal/__init__.py": {
+      "bytes": 67,
+      "sha256": "c0d71d42eadd1f400f43e2fec26a68a6d1b19cdb039db7c915b808929da6ed6f"
+    },
+    "cbrain_studio/hal/bleak_transport.py": {
+      "bytes": 3242,
+      "sha256": "e09e2823d2d953639549c46de70b8cac5db99eb942fe0e6718031c9e7a3347e6"
+    },
+    "cbrain_studio/hal/bridge.py": {
+      "bytes": 4509,
+      "sha256": "25a50f068166b6fbee350b7e864e4b53d79be30f0f210d75df067d8d456e4978"
+    },
+    "cbrain_studio/hal/dongle.py": {
+      "bytes": 6831,
+      "sha256": "2712d60642b90adb29f9d568b76794e6812e4a7b6789a95a5805c7e69c544a63"
+    },
+    "cbrain_studio/hal/interfaces.py": {
+      "bytes": 2238,
+      "sha256": "83ca433144c954e1863166bb52f4935136e8904fed9e36b9d9f26c5f1f2e90db"
+    },
+    "cbrain_studio/hal/simulated.py": {
+      "bytes": 5290,
+      "sha256": "d54b75ea118b8e8d26bdd13980d20a3cfdae3ee2fa239845379d4d01f509ca33"
+    },
+    "cbrain_studio/sim/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cbrain_studio/sim/harness.py": {
+      "bytes": 6730,
+      "sha256": "28c39c6c9be900dad2ab56742df43a8535c1b5ef2328016b283ed52756195cef"
+    },
+    "cbrain_studio/sim/signal.py": {
+      "bytes": 2396,
+      "sha256": "202b47c9a59de2d4f6765efd34317f1f52573ac9793c0666ece5749e6db8d8b2"
+    },
+    "cbrain_studio/suite/__init__.py": {
+      "bytes": 94,
+      "sha256": "3e74b731604e6fbe9fefc2d2aff7362388ef2a84cb9560ed8be8f9799937470b"
+    },
+    "cbrain_studio/suite/builder.py": {
+      "bytes": 10730,
+      "sha256": "d0a99f33743b09fa6bc6ddb2ea359a04227aaf1854585c8765337bc1ab1d5bb4"
+    },
+    "cbrain_studio/suite/launch.py": {
+      "bytes": 857,
+      "sha256": "735a529ee0554bc7926eb35bd01cfb1be85567de24e98256263b2e9feed46c4c"
+    },
+    "cbrain_studio/suite/provision.py": {
+      "bytes": 5703,
+      "sha256": "16faa756878bb1a08d956a6354753807d36766a40960e0ae7faf2b80e8dd5ddc"
+    },
+    "cbrain_studio/suite/runtime.py": {
+      "bytes": 14890,
+      "sha256": "d1aceaa009892bdc5e36ae31470a4bae332972b78482c4e5f28eb151d65769db"
+    },
+    "cbrain_studio/suite/saved_recording.py": {
+      "bytes": 9764,
+      "sha256": "4ec05677f633f0a8759068e406a9b178f69a9de191d0c95101abe537c4dfe462"
+    },
+    "cbrain_studio/suite/setup.py": {
+      "bytes": 9452,
+      "sha256": "4a4209a3ff2ebf0fdebc11aeae81dc793110dd7d2f49777aa3e4c20b936a7395"
+    },
+    "cbrain_studio/suite/source.py": {
+      "bytes": 1033,
+      "sha256": "5d382ea8584ac31ad87922d47278e7b105244ad6cb969865105eaa247afdcfe0"
+    },
+    "cbrain_studio/suite/studio.py": {
+      "bytes": 8169,
+      "sha256": "ae65cc3541e8f62ebb1be8ccd37ad5260e8d09524d1e34699dff8c4f10875827"
+    },
+    "cbrain_studio/suite/ui_common.py": {
+      "bytes": 21272,
+      "sha256": "8e7cea99fcb8cf56ee70e7e310022475aed9904cfbb7dff5e81aa7025d11533e"
+    },
+    "cbrain_studio/suite/usb.py": {
+      "bytes": 14106,
+      "sha256": "22a239eb4c00dc08d04985586343549ce7aaf244af803e7b63f17059195a101e"
+    },
+    "cbrain_studio/suite/viewer.py": {
+      "bytes": 20950,
+      "sha256": "c079d12d76ac0f32e1ad77ad8d691ad7afc4849701f98010b208dc7df2b87281"
+    },
+    "cbrain_studio/suite/viewer_launch.py": {
+      "bytes": 2288,
+      "sha256": "ba4cc43f59a564424a8cd032d9633ced251781acfd5b9480bb59f332b21543b1"
+    },
+    "cbrain_studio/ui/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cbrain_studio/ui/builder_scope.py": {
+      "bytes": 6022,
+      "sha256": "9b3b20de43493ffde07f868402c97f50a0c3cc183939ff79fb1bd239ee51a0be"
+    },
+    "cbrain_studio/ui/console.py": {
+      "bytes": 20812,
+      "sha256": "8410da06e6698cb97dad469d535c8bc4fea00cd948bb76f9ee79a1673cfe1f18"
+    },
+    "cbrain_studio/ui/fw_builder.py": {
+      "bytes": 26876,
+      "sha256": "bc184cdcb5d4c1c2c47f2787203dc4b14b390cf4d3f39b340d87fd694051bd6f"
+    },
+    "cbrain_studio/ui/multi_scope.py": {
+      "bytes": 6573,
+      "sha256": "da2f4217d6a84ae45545c7f686262e7d5076bed9b0c48c2ce59d2b00f114fb8b"
+    },
+    "cbrain_studio/ui/pairer.py": {
+      "bytes": 8780,
+      "sha256": "1a62d5f1c77930094ebd7074adcc56589ffcd2bc9b6aa82dca205ac191e38c2d"
+    },
+    "cbrain_studio/ui/scope.py": {
+      "bytes": 8486,
+      "sha256": "af51345656aab40367010a27056074155dcaf9f4611bfdc19110dbf91051858f"
+    },
+    "cbrain_studio/ui/studio.py": {
+      "bytes": 20716,
+      "sha256": "7217b61940a6a93f0ee5b53760e22cb384a88fb4d729edaea5d6372d767347db"
+    },
+    "docs/BRIDGE_DISCOVERY_PROTOCOL.md": {
+      "bytes": 8326,
+      "sha256": "1e5e5aa0c0d8ac6f035688b17ca12866f0d4f3c58bd5d5ccbcbb318f7faffd35"
+    },
+    "docs/GITHUB_PUBLISH_KO.md": {
+      "bytes": 10660,
+      "sha256": "5198e27abe591d1bb1f5b5b105491af5b5d8ce2036638653a84585da4e703ed6"
+    },
+    "docs/RECORDING_VIEWER.md": {
+      "bytes": 4235,
+      "sha256": "ed72b174870f1b1359fd8034bacb177ac5363c4e2eb65ce811308e11c5ccae1f"
+    },
+    "docs/SENSOR_SOURCE.md": {
+      "bytes": 4368,
+      "sha256": "82d747427a00a8cb64dac7be6345875eb109b7ace850dbc299231bba6269f38b"
+    },
+    "docs/USER_MANUAL_KO.md": {
+      "bytes": 27810,
+      "sha256": "f8063c7d457c92ceb3a702cd1d72c91d3459e73b599f553f1f7f7f5399e190dd"
+    },
+    "docs/assets/manual/setup-prepare.png": {
+      "bytes": 80631,
+      "sha256": "14858a591291ee1f4f2aa2d5761a9b23bcfa9c7c26d42848ec8dd3ee21dbf57b"
+    },
+    "docs/assets/manual/setup-select.png": {
+      "bytes": 77193,
+      "sha256": "9650392c1ec4bf0c76fe9019daa15ca6cbded1f6522915d5c05e26a6cf29de75"
+    },
+    "docs/assets/manual/studio-select.png": {
+      "bytes": 83957,
+      "sha256": "e34059f2106ebff6ec69530d421ce82c19371ecdaae3955a12a47c19be3ecdd5"
+    },
+    "docs/assets/manual/viewer-example.png": {
+      "bytes": 115585,
+      "sha256": "4a9a415da9f62f041f8f25962d07f5ba63710245fc395523c3a79f960543d8cb"
+    },
+    "firmware/cb_bridge/CMakeLists.txt": {
+      "bytes": 153,
+      "sha256": "73c92c01116d2393828e04329a805cf365041837cf1ca15d5e7fb9f9e9f55993"
+    },
+    "firmware/cb_bridge/Kconfig": {
+      "bytes": 429,
+      "sha256": "5505262408a716a75d5c0e3505cb038a4100aeaea269c73e918f313f604154d2"
+    },
+    "firmware/cb_bridge/app.overlay": {
+      "bytes": 563,
+      "sha256": "4f0c5892af79d038863547968c5c8822304645e76e66a8abf9215fb15d63976b"
+    },
+    "firmware/cb_bridge/prj.conf": {
+      "bytes": 2158,
+      "sha256": "fc2eca3ed4d8298d159f030850dea2abe1c6040309f3f493da3f328559aec991"
+    },
+    "firmware/cb_bridge/src/discovery.inc": {
+      "bytes": 7717,
+      "sha256": "5a3a0a475dba2c11a2cb5b05892b13714aa90491ebd76e355bcd6393ed467e35"
+    },
+    "firmware/cb_bridge/src/discovery_protocol.h": {
+      "bytes": 1958,
+      "sha256": "560987b3e2f91281d8a11dc240182349dbb3ba8bab5da0d23fe9a2e4c0966bdf"
+    },
+    "firmware/cb_bridge/src/main.c": {
+      "bytes": 19829,
+      "sha256": "529b777df7bcc593a9195232a5cdf9270bdf866bedb1129ef5713a8db7d8413b"
+    },
+    "firmware/cb_bridge/tests/discovery_test.c": {
+      "bytes": 6308,
+      "sha256": "6e5e2874de1db14a9637423e79d36f257300949f3bee256e34a15ceef7b019e4"
+    },
+    "firmware/cb_intan/CMakeLists.txt": {
+      "bytes": 178,
+      "sha256": "622abe54da2b8f8ba9f104e0ea3b91a47a1b7365d71c50664d7e128ecfb6c4bc"
+    },
+    "firmware/cb_intan/README.md": {
+      "bytes": 2392,
+      "sha256": "3efb2363b1933e0d23befb4e922d311f4e4de240c949aee27216d2fe71e67d8a"
+    },
+    "firmware/cb_intan/app.overlay": {
+      "bytes": 2283,
+      "sha256": "d5979fdbc5fe9cb8110c7c503d007912d3b7ec1c2f8eb9d88d8932e26dbeabf2"
+    },
+    "firmware/cb_intan/dts/bindings/cb,rhd2216.yaml": {
+      "bytes": 108,
+      "sha256": "f9924825d3bedce5b96ab3cade9de3fedeed0d59bc79dfbf72f9e67c9661136c"
+    },
+    "firmware/cb_intan/prj.conf": {
+      "bytes": 1328,
+      "sha256": "79ac0e5b82c315db43b1e896b043b51e3e11688a9eacdb30fc979a1188d5fd17"
+    },
+    "firmware/cb_intan/src/cb_config.h": {
+      "bytes": 2423,
+      "sha256": "a3ee0aa6edaabb785c5a398338afb56dd725d80f7ced47db78e0c29239e955bd"
+    },
+    "firmware/cb_intan/src/cb_dsp.c": {
+      "bytes": 1794,
+      "sha256": "f670ca221ceefecec49d8a5f01a818f819c69ef432f3317581d632b1c1148f3c"
+    },
+    "firmware/cb_intan/src/cb_dsp.h": {
+      "bytes": 1094,
+      "sha256": "9bfb6d53ac5c814cb1d7cc495dfe26f593f2b52b56f5d675b8ca040159a73749"
+    },
+    "firmware/cb_intan/src/cb_proto.h": {
+      "bytes": 7230,
+      "sha256": "49cd57c43ea184172ebbc7de716e345c635c8ae5ec043345faf072c3d4fea138"
+    },
+    "firmware/cb_intan/src/cb_rhd.c": {
+      "bytes": 6354,
+      "sha256": "138aa9c3a0004fa0b6c8d4eab4405626d8f6c434f46fe1d180986c4cb0905488"
+    },
+    "firmware/cb_intan/src/cb_rhd.h": {
+      "bytes": 1221,
+      "sha256": "ae7184855687c5ed951c8f7d3170504bfb5bd795bb02969b633d7bc9312818ac"
+    },
+    "firmware/cb_intan/src/main.c": {
+      "bytes": 22221,
+      "sha256": "754e062e290ff86969d9497fbd680310b87c65a3b602477007510b081600dffd"
+    },
+    "new_hardware/1-PCB_PCB_DCC.json": {
+      "bytes": 422674,
+      "sha256": "746de1f297fd72b3981633c51094b4734c6cea670f40b6a8e4640ed2e0f9a0c6"
+    },
+    "new_hardware/1-Schematic_CB_INTAN.json": {
+      "bytes": 120177,
+      "sha256": "8a5420337aa1c4bf926c7bf2cd30a3cfbe27232932b03790b6ecb0da044a7484"
+    },
+    "new_hardware/PCB_INTAN_Charger_2026-07-13.json": {
+      "bytes": 557443,
+      "sha256": "10f4290772b22257d3b1215c998b8599bf12c96b7499190b3d32bb6053f1e3c3"
+    },
+    "new_hardware/PINMAP.md": {
+      "bytes": 6693,
+      "sha256": "0afd548c7146f2fd781435e13ff76d1a4f21bfb286f9aacd8d1da85dd07d079d"
+    },
+    "new_hardware/README.txt": {
+      "bytes": 359,
+      "sha256": "09a7ee7b449fb4c1c4217fade8c4a5e9623643a8222fcd54fe33cb2ca09ed49f"
+    },
+    "output/pdf/CBRAIN_Manual_KO.pdf": {
+      "bytes": 532553,
+      "sha256": "ec9290d97c83b4defb13f27bfda6a833172619beb0bbb84cf64d1037a0e38472"
+    },
+    "release/CORE_FILES.txt": {
+      "bytes": 1265,
+      "sha256": "e7b3a41442e5d1196917c3d4cf7655a56c8ce18adfa14fdc8927a2d600c4b6a3"
+    },
+    "requirements-suite-lock.txt": {
+      "bytes": 323,
+      "sha256": "42c5f783e496b5fac685505d0c35eb8c250db0511dde82676599034a6e4d7472"
+    },
+    "tests/test_acquisition.py": {
+      "bytes": 3795,
+      "sha256": "031bcf39710aed27737d67b53a45092299747e515d88196df58e4efb12ca0121"
+    },
+    "tests/test_bridge.py": {
+      "bytes": 3545,
+      "sha256": "51ed91b530b6f34c93f2d0b409426e92068869fa1573496d696d66ffc77ad5b5"
+    },
+    "tests/test_bridge_discovery.py": {
+      "bytes": 1545,
+      "sha256": "4c6b3d9a4aa3ee6aa9c61452ea474f72995512dd8baa949c98bd86b8cfb06667"
+    },
+    "tests/test_calibration.py": {
+      "bytes": 1588,
+      "sha256": "c52e126ba1bd2470f6325369619c7a9268c712b917e2bcdff30269fb372ffe53"
+    },
+    "tests/test_console.py": {
+      "bytes": 3740,
+      "sha256": "0148e2f9f35b4ad6015bb81e4eb5430c34d0aa5f8e80109de64a2b41bb71e95b"
+    },
+    "tests/test_control.py": {
+      "bytes": 3224,
+      "sha256": "554003534b30d2f8da1edebc65003eb9d6e9954e20c3fa71e847b09a10eaec3b"
+    },
+    "tests/test_convert.py": {
+      "bytes": 3978,
+      "sha256": "50e7ecafc56a6b84b5fb5737ecdf3b7d7dc0bca6991275876b4816759bca1c6d"
+    },
+    "tests/test_detection.py": {
+      "bytes": 2969,
+      "sha256": "9b81bc554066e908baae406a6461ca583b6084b80f91b719e9bc2de6c685c9e7"
+    },
+    "tests/test_display_buffer.py": {
+      "bytes": 3691,
+      "sha256": "ec928a42cc9a97bfed625545dc8cab5b24c8cdf03a2b868fcd7a0f45b1c5f9b6"
+    },
+    "tests/test_dongle_busy.py": {
+      "bytes": 2504,
+      "sha256": "95f137230bdaeb180c30a276d93de407e00c611c5127d804082213b4a3b2b003"
+    },
+    "tests/test_fw_config.py": {
+      "bytes": 2000,
+      "sha256": "19dba4b0fd5b0bf7dd4049ece1c73dd110f8d9735284f0d48348c7955c126a16"
+    },
+    "tests/test_hex_stamp.py": {
+      "bytes": 2544,
+      "sha256": "90e0724f1ffe9d545a8987625d51b8a95207a2b2f65c134a93e6a2db2c11a6e1"
+    },
+    "tests/test_led_gate.py": {
+      "bytes": 1460,
+      "sha256": "2f2ad8247d30c6ce507c1a6b089c22a5730c40b5e5d8ebe00117102951dae5cf"
+    },
+    "tests/test_packet.py": {
+      "bytes": 5598,
+      "sha256": "dc5e372bacb938d7c6553174543ac7cbdd8fda535fd204694c4128c80eccbda8"
+    },
+    "tests/test_profile.py": {
+      "bytes": 1415,
+      "sha256": "e5b7b0f04db6e83cb216296e38205f7d67029d51e925e3cdf5537631de18411e"
+    },
+    "tests/test_provision_running.py": {
+      "bytes": 3480,
+      "sha256": "e105161f4442281de26afa2df4ec881f24124850ee113d5cc8cc3d6293cb6f89"
+    },
+    "tests/test_recording_viewer.py": {
+      "bytes": 5379,
+      "sha256": "b5c2627e6c0a2f9502bf589414a5cc641657c29a477946e04de206b177196d3f"
+    },
+    "tests/test_rhd_driver.py": {
+      "bytes": 3641,
+      "sha256": "bd154a2e7cb1d4a44e8242eea4ceea76682313b471a48fe56c0448876512efe8"
+    },
+    "tests/test_sample_source.py": {
+      "bytes": 3275,
+      "sha256": "3c42d6fad50e8c028b48f0719615583d5de33f6a2370094781d45b9f5988a032"
+    },
+    "tests/test_saved_recording.py": {
+      "bytes": 6266,
+      "sha256": "14a09efd7802dcc306054038daedc960357fdc1773678d472f89b40a35101fa0"
+    },
+    "tests/test_session.py": {
+      "bytes": 4464,
+      "sha256": "3dee9d014228fbff9ab6fa4c38dcdf64528d002234a4e21a5e13b963715640e7"
+    },
+    "tests/test_sim_harness.py": {
+      "bytes": 2118,
+      "sha256": "85d92b6a34d5430d84e4167c2d224c9e2f91e486465ee742cfb793c4bb712c74"
+    },
+    "tests/test_suite.py": {
+      "bytes": 8816,
+      "sha256": "0e4697a6ce0923f4c11f00fb7fe7d55126ca760e90d2b51da235b82d7843edb9"
+    },
+    "tests/test_suite_ui.py": {
+      "bytes": 6024,
+      "sha256": "62d3a8d269fa55fcdef9ac1fa442b3fe8f4a40608a42dfad36f6ceb7e515925a"
+    },
+    "tools/bridge_discover.py": {
+      "bytes": 4428,
+      "sha256": "5f23229fbb278d249d148b58339a8407a745cf38b50474ab036ae1bdb3d2b0c9"
+    },
+    "tools/build_bridge_discovery.sh": {
+      "bytes": 680,
+      "sha256": "d254a455d945ab70252210cc487b4374dfda6cd18fada53478fe33e5bea2336e"
+    },
+    "tools/build_headstage.sh": {
+      "bytes": 726,
+      "sha256": "5f31c6c243c929a25c11b855e304002d0338134dea1e13e323efb4be9a5dad48"
+    },
+    "tools/build_suite.py": {
+      "bytes": 2005,
+      "sha256": "61758cba36891e0b75fad18488fc6d9d096c653cabea152ddbf09ea375e6dbea"
+    },
+    "tools/convert_recording.py": {
+      "bytes": 4722,
+      "sha256": "3b765536f4a2337bffa03ed62316d464c3297db50cfc40b7ca6059fcafc159f3"
+    },
+    "tools/device_setup.py": {
+      "bytes": 217,
+      "sha256": "55514d193c0ce9a2d7db5b6593da247d11c6f2ef850594b83b82f53b5823e4f3"
+    },
+    "tools/fwbuilder_app.py": {
+      "bytes": 219,
+      "sha256": "a09e2cf48a638b0c7bb813d3f57801f0ed1dcb6a985c7e544cbaad3ffd76024c"
+    },
+    "tools/make_manual_pdf.py": {
+      "bytes": 8191,
+      "sha256": "7db2ec6d0eab2f761bd29bb33d92317d665bea536c6324b3f02b1a9e52e19abc"
+    },
+    "tools/manual_screenshots.py": {
+      "bytes": 3724,
+      "sha256": "80f9a2df9b7eb9ee1ce154817b28da34323e0386827c8226005d135058e078ee"
+    },
+    "tools/prepare_github_release.py": {
+      "bytes": 4186,
+      "sha256": "c7080276371303423b850232618d916a6cf76f2c57f8768f2053f5885d88f065"
+    },
+    "tools/recording_viewer.py": {
+      "bytes": 226,
+      "sha256": "3bae57169aafd829474322f3e642e736f7d82310ededfba0ab4d64470d405088"
+    },
+    "tools/studio_gui.py": {
+      "bytes": 218,
+      "sha256": "8102685c704ec26d7a41b5a334c72ec38911a8ea4c1023e0b82fff9fca891eb9"
+    }
+  }
+}

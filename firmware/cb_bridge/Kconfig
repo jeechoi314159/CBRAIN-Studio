@@ -1,0 +1,10 @@
+# cb_bridge 앱 설정
+source "Kconfig.zephyr"
+
+config CB_BRIDGE_TARGET_ID
+	int "Exclusive target CBRAIN headstage id (0 = any)"
+	default 0
+	help
+	  0 이 아니면 이 브리지는 오직 CBRAIN_<id> 에만 연결한다(배타적 1:1).
+	  동글마다 hex 를 구울 때 지정: west build ... -- -DCONFIG_CB_BRIDGE_TARGET_ID=2
+	  0 = 아무 CBRAIN (브링업용 폴백). 컴파일 타임 값이 UICR 각인보다 우선한다.

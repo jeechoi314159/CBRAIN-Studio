@@ -1,0 +1,84 @@
+/*
+ * CB_INTAN 헤드스테이지 SPI 배선 (PINMAP §2):
+ *   nRF P0.11=MOSI, P0.12=MISO, P0.13=SCLK, P0.14=CS  →  RHD2216
+ *
+ * 빌드 타깃은 nrf52dk/nrf52832 를 프록시로 쓴다. 실제 보드는 CB_INTAN 이며
+ * 이 핀들이 SPI 다. DK 에서는 P0.13/P0.14 가 버튼이라 충돌하므로 비활성화한다.
+ */
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+&pinctrl {
+	spi1_default: spi1_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 13)>,
+			        <NRF_PSEL(SPIM_MOSI, 0, 11)>,
+			        <NRF_PSEL(SPIM_MISO, 0, 12)>;
+		};
+	};
+	spi1_sleep: spi1_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 13)>,
+			        <NRF_PSEL(SPIM_MOSI, 0, 11)>,
+			        <NRF_PSEL(SPIM_MISO, 0, 12)>;
+			low-power-enable;
+		};
+	};
+	/* RGB LED PWM — LED0 = P0.25/26/27, LED1 = P0.28/29/30 (PINMAP §2). */
+	pwm0_cb: pwm0_cb {
+		group1 {
+			psels = <NRF_PSEL(PWM_OUT0, 0, 25)>, <NRF_PSEL(PWM_OUT1, 0, 26)>,
+			        <NRF_PSEL(PWM_OUT2, 0, 27)>, <NRF_PSEL(PWM_OUT3, 0, 28)>;
+		};
+	};
+	pwm0_cb_sleep: pwm0_cb_sleep {
+		group1 {
+			psels = <NRF_PSEL(PWM_OUT0, 0, 25)>, <NRF_PSEL(PWM_OUT1, 0, 26)>,
+			        <NRF_PSEL(PWM_OUT2, 0, 27)>, <NRF_PSEL(PWM_OUT3, 0, 28)>;
+			low-power-enable;
+		};
+	};
+	pwm1_cb: pwm1_cb {
+		group1 {
+			psels = <NRF_PSEL(PWM_OUT0, 0, 29)>, <NRF_PSEL(PWM_OUT1, 0, 30)>;
+		};
+	};
+	pwm1_cb_sleep: pwm1_cb_sleep {
+		group1 {
+			psels = <NRF_PSEL(PWM_OUT0, 0, 29)>, <NRF_PSEL(PWM_OUT1, 0, 30)>;
+			low-power-enable;
+		};
+	};
+};
+
+/* Board pwmled (uses pwm0 on a DK LED pin) would conflict — reassign pwm0/1 to ours. */
+&pwm0 {
+	status = "okay";
+	pinctrl-0 = <&pwm0_cb>;
+	pinctrl-1 = <&pwm0_cb_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+&pwm1 {
+	status = "okay";
+	pinctrl-0 = <&pwm1_cb>;
+	pinctrl-1 = <&pwm1_cb_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+
+/* DK 버튼(P0.13/P0.14)과 겹치므로 해제 */
+&button0 { status = "disabled"; };
+&button1 { status = "disabled"; };
+
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-1 = <&spi1_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+
+	rhd: rhd2216@0 {
+		compatible = "cb,rhd2216";
+		reg = <0>;
+		spi-max-frequency = <1000000>;   /* 1 MHz (RHD2000 은 24 MHz 까지; 보수적 시작) */
+	};
+};

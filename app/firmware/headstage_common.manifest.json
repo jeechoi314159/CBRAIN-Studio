@@ -1,0 +1,25 @@
+{
+  "version": "0.3.0",
+  "board": "CB_INTAN nRF52832 + RHD2216",
+  "build_board": "nrf52dk/nrf52832",
+  "sha256": "86e4a9d95d3ba7114caf40f3d40e86876e2419e345606b5a49d20004528ca929",
+  "built_at": "2026-09-16T18:36:25.848048+09:00",
+  "build_command": "bash tools/build_headstage.sh",
+  "config": "4 channels [0,1,2,3], 1024 Hz, 60 Hz notch setting, both LEDs disabled",
+  "source_flags": {
+    "valid": 16384,
+    "fault": 8192,
+    "reason_mask": 112
+  },
+  "uv_per_lsb": 0.195,
+  "hardware_tested": false,
+  "sources": {
+    "firmware/cb_intan/src/cb_config.h": "a3ee0aa6edaabb785c5a398338afb56dd725d80f7ced47db78e0c29239e955bd",
+    "firmware/cb_intan/src/cb_dsp.c": "f670ca221ceefecec49d8a5f01a818f819c69ef432f3317581d632b1c1148f3c",
+    "firmware/cb_intan/src/cb_dsp.h": "9bfb6d53ac5c814cb1d7cc495dfe26f593f2b52b56f5d675b8ca040159a73749",
+    "firmware/cb_intan/src/cb_proto.h": "49cd57c43ea184172ebbc7de716e345c635c8ae5ec043345faf072c3d4fea138",
+    "firmware/cb_intan/src/cb_rhd.c": "138aa9c3a0004fa0b6c8d4eab4405626d8f6c434f46fe1d180986c4cb0905488",
+    "firmware/cb_intan/src/cb_rhd.h": "ae7184855687c5ed951c8f7d3170504bfb5bd795bb02969b633d7bc9312818ac",
+    "firmware/cb_intan/src/main.c": "754e062e290ff86969d9497fbd680310b87c65a3b602477007510b081600dffd"
+  }
+}

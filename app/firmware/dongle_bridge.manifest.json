@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0-discovery",
+  "protocol": 1,
+  "board": "nrf52840dongle/nrf52840",
+  "sdk": "NCS v3.4.0",
+  "built": "2026-09-16T17:01:27.361783+09:00",
+  "sha256": "7122da2de449935fb1e52f9349337432ea7f9065b4ef102d3e8efe8c2e2f49db",
+  "backup": "app/firmware/backups/dongle_bridge_before_discovery_2026-09-16.hex",
+  "backup_sha256": "a2611955393cf5ec90baea599dd02ab26a967b33bc6735380cda8d4f753e0ccd",
+  "flash_min": "0x1000",
+  "flash_max": "0x2bb8b",
+  "flash_bytes": 174967,
+  "ram_used": 61628,
+  "factory_target": 0,
+  "sources": {
+    "firmware/cb_bridge/src/main.c": "529b777df7bcc593a9195232a5cdf9270bdf866bedb1129ef5713a8db7d8413b",
+    "firmware/cb_bridge/src/discovery.inc": "5a3a0a475dba2c11a2cb5b05892b13714aa90491ebd76e355bcd6393ed467e35",
+    "firmware/cb_bridge/src/discovery_protocol.h": "560987b3e2f91281d8a11dc240182349dbb3ba8bab5da0d23fe9a2e4c0966bdf",
+    "firmware/cb_bridge/prj.conf": "fc2eca3ed4d8298d159f030850dea2abe1c6040309f3f493da3f328559aec991",
+    "tools/build_bridge_discovery.sh": "d254a455d945ab70252210cc487b4374dfda6cd18fada53478fe33e5bea2336e",
+    "tools/bridge_discover.py": "5f23229fbb278d249d148b58339a8407a745cf38b50474ab036ae1bdb3d2b0c9",
+    "tests/test_bridge_discovery.py": "4c6b3d9a4aa3ee6aa9c61452ea474f72995512dd8baa949c98bd86b8cfb06667",
+    "firmware/cb_bridge/tests/discovery_test.c": "6e5e2874de1db14a9637423e79d36f257300949f3bee256e34a15ceef7b019e4",
+    "docs/BRIDGE_DISCOVERY_PROTOCOL.md": "64a9c101f8b72cb63267dd5e428b89f8c59614c21860a8d12d50fcbc5082edb6"
+  },
+  "checks": [
+    "ARM firmware build passed",
+    "native discovery tests with ASan/UBSan passed",
+    "4 USB decoder tests passed",
+    "Intel HEX checksums/address/vector/neutral target verified"
+  ],
+  "hardware_tested": false,
+  "flashed_to_device": false
+}

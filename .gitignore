@@ -1,0 +1,37 @@
+# Local runtimes and build products
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.profraw
+*.log
+build/
+dist_apps/
+*.app/
+*.spec
+tmp/
+.env
+.env.*
+
+# Experimental data and local machine state
+*.h5
+*.hdf5
+recordings/
+rec_test/
+reports/
+devices.json
+uicr_backups/
+
+# Archived releases and personal calibration images
+app/legacy*/
+app/firmware/backups/
+app/firmware/CBRAIN_LED*.hex
+legacy_matlab/
+
+# Publish only the reviewed PDF from the artifact output folder
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/CBRAIN_Manual_KO.pdf
